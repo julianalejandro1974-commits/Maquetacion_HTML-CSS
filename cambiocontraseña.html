@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/Sesion.css">
+
+    <title>Nueva Contraseña</title>
+
+</head>
+
+
+<body>
+
+    <div class="recuperar">
+
+
+        <!-- LOGO -->
+
+        <div class="logo">
+            🛡️
+        </div>
+
+
+        <!-- TÍTULO -->
+
+        <h1 class="titulo">
+            SAMMY SPORTS
+        </h1>
+
+
+        <!-- SUBTÍTULO -->
+
+        <h2 class="subtitulo">
+            Crear Nueva Contraseña
+        </h2>
+
+
+        <!-- MENSAJE DE CÓDIGO VERIFICADO -->
+
+        <div class="mensaje">
+
+            <span class="mensaje-icono">
+                ⓘ
+            </span>
+
+            <div class="mensaje-texto">
+
+                <p>
+                    Código verificado con éxito para
+                    <strong>admin@sammysports.com</strong>.
+                </p>
+
+                <p>
+                    Ingresa tu nueva credencial de acceso administrativo.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FORMULARIO -->
+
+        <form class="formulario" action="datos" method="get">
+
+
+            <!-- NUEVA CONTRASEÑA -->
+
+            <div class="campo-nueva">
+
+                <label for="nueva-contraseña">
+                    Nueva Contraseña
+                </label>
+
+
+                <div class="input-contenedor">
+
+                    <span class="icono">
+                        🔒
+                    </span>
+
+                    <input
+                        type="password"
+                        id="nueva-contraseña"
+                        name="nueva-contraseña"
+                        placeholder="••••••••••"
+                        required
+                    >
+
+                    <span class="icono-visibilidad">
+                        ◉
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONFIRMAR CONTRASEÑA -->
+
+            <div class="campo-confirmar">
+
+                <label for="confirmar-contraseña">
+                    Confirmar Nueva Contraseña
+                </label>
+
+
+                <div class="input-contenedor">
+
+                    <span class="icono">
+                        🔒
+                    </span>
+
+                    <input
+                        type="password"
+                        id="confirmar-contraseña"
+                        name="confirmar-contraseña"
+                        placeholder="••••••••••"
+                        required
+                    >
+
+                    <span class="icono-confirmacion">
+                        ✓
+                    </span>
+
+                </div>
+
+
+                <p class="mensaje-confirmacion">
+                    Las contraseñas coinciden perfectamente.
+                </p>
+
+            </div>
+
+
+            <!-- BOTÓN -->
+
+            <button class="boton" type="submit">
+                Actualizar Contraseña e Ingresar &nbsp;→
+            </button>
+
+
+        </form>
+
+
+        <!-- CANCELAR -->
+
+        <a class="cancelar" href="inicioSesion.html">
+            ← &nbsp; Cancelar y volver al inicio de sesión
+        </a>
+
+
+        <!-- SEGURIDAD -->
+
+        <p class="seguridad">
+            ◉ &nbsp; Entorno Seguro. Encriptación de extremo a extremo.
+        </p>
+
+
+    </div>
+
+</body>
+
+</html>
