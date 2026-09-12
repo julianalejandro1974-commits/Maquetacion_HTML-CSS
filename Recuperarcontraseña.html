@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Sesion.css">
+    <title>Recuperar Contraseña</title>
+</head>
+
+<body>
+    <div class="recuperar">
+
+        <div class="logo">
+            🛡️
+        </div>
+        <div class="titulo">
+            <h1>SAMMY SPORTS</h1>
+        </div>
+        <div class="subtitulo">
+            <h2>Recuperacion de contraseña</h2>
+        </div>
+        <p class="descripcion">Ingresa el correo electrónico asociado a tu cuenta administrativa. Te enviaremos un
+            código de seguridad de 6
+            dígitos para validar tu identidad.</p>
+
+        <form class="formulario" action="datos" method="get">
+
+            <div class="campo-correo">
+                <label for="correo">Correo vinculado</label>
+
+                <div class="input-contenedor">
+                    <span class="icono">✉️</span>
+
+                    <input type="email" id="correo" name="correo" placeholder="admin@sammysports.com" required>
+                </div>
+            </div>
+
+            <button class="boton" type="submit">
+                Enviar codigo de seguridad &nbsp;→
+            </button>
+
+            <div class="codigo">
+                <div class="codigo-header">
+                    <div class="codigo-titulo">
+                        <span>¿Ya recibiste tu código?</span>
+                        <a class="codigo-reenviar" href="#">Reenviar código (58s)</a>
+                    </div>
+                </div>
+                <div class="codigo-inputs">
+
+                    <input class="codigo-input" type="text" maxlength="1" inputmode="numeric">
+                    <input class="codigo-input" type="text" maxlength="1" inputmode="numeric">
+                    <input class="codigo-input" type="text" maxlength="1" inputmode="numeric">
+                    <input class="codigo-input" type="text" maxlength="1" inputmode="numeric">
+                    <input class="codigo-input" type="text" maxlength="1" inputmode="numeric">
+                    <input class="codigo-input" type="text" maxlength="1" inputmode="numeric">
+
+                </div>
+
+                <p class="codigo-ayuda">
+                    Revisa tu bandeja de entrada o la carpeta de correo no deseado.
+                </p>
+        </form>
+
+
+        <a class="Volver" href="inicioSesion.html" target="_blank">
+            Volver a Inicio de Sesion
+        </a>
+        <p class="seguridad">
+            ♧ Entorno Seguro. Solo Personal Autorizado.
+        </p>
+
+    </div>
+</body>
+
+</html>
