@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f4f7fb;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+        url("../CSS/Captura\ de\ pantalla\ 2026-09-11\ 195339.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: Arial, sans-serif;
+}
+
+/* TARJETA PRINCIPAL */
+.recuperar {
+    width: 423px;
+    min-height: 595px;
+    padding: 40px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #e1e5eb;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* LOGO Y ENCABEZADOS */
+.recuperar > .logo {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 32px;
+    color: #0645c5;
+}
+
+.recuperar > .titulo {
+    margin: 0 0 7px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #0645c5;
+}
+
+.recuperar > .subtitulo {
+    margin: 0 0 20px;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    color: #555;
+}
+
+/* MENSAJE DE VERIFICACIÓN */
+.mensaje {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #f0f7ff;
+    border: 1px solid #cce3ff;
+    border-radius: 5px;
+}
+
+.mensaje-icono {
+    font-size: 14px;
+    color: #0752d4;
+}
+
+.mensaje-texto p {
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.4;
+    color: #334155;
+}
+
+.mensaje-texto p + p {
+    margin-top: 4px;
+}
+
+/* FORMULARIO */
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CAMPOS DE ENTRADA (NUEVA Y CONFIRMAR) */
+.campo-nueva,
+.campo-confirmar {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-nueva label,
+.campo-confirmar label {
+    margin-bottom: 7px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-contenedor {
+    width: 100%;
+    height: 38px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d8dee8;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.input-contenedor:focus-within {
+    border-color: #0752d4;
+}
+
+.icono {
+    margin-right: 8px;
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.input-contenedor input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: #334155;
+}
+
+.input-contenedor input::placeholder {
+    color: #94a3b8;
+}
+
+.icono-visibilidad,
+.icono-confirmacion {
+    font-size: 12px;
+    color: #94a3b8;
+    cursor: pointer;
+}
+
+.icono-confirmacion {
+    color: #16a34a; /* Verde para confirmación exitosa */
+}
+
+.mensaje-confirmacion {
+    margin: 6px 0 0;
+    font-size: 10px;
+    color: #16a34a;
+}
+
+/* BOTÓN PRINCIPAL */
+.formulario > .boton {
+    width: 100%;
+    height: 38px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0752d4;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.formulario > .boton:hover {
+    background-color: #0647b7;
+}
+
+/* ENLACE CANCELAR */
+.cancelar {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #0752d4;
+    text-decoration: none;
+}
+
+.cancelar:hover {
+    text-decoration: underline;
+}
+
+/* PIE DE SEGURIDAD */
+.seguridad {
+    width: 100%;
+    margin: auto 0 0;
+    padding-top: 15px;
+    border-top: 1px solid #eef1f5;
+    font-size: 9px;
+    color: #94a3b8;
+    text-align: center;
+}
