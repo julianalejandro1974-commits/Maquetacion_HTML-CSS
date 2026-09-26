@@ -1,0 +1,235 @@
+:root {
+    --primary-blue: #0046cd;
+    --primary-hover: #0036a0;
+    --bg-light: #f8f9fe;
+    --card-bg: #ffffff;
+    --input-bg: #f4f6fa;
+    --text-main: #111827;
+    --text-muted: #6b7280;
+    --border-color: #e5e7eb;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.navbar-brand {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+    color: var(--primary-blue) !important;
+}
+
+.nav-link {
+    color: var(--text-muted) !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--primary-blue) !important;
+}
+
+.header-icon {
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.header-icon:hover {
+    color: var(--primary-hover);
+}
+
+/* Cart & Item Styles */
+.cart-item {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.product-img-box {
+    width: 120px;
+    height: 120px;
+    background-color: #f1f3f7;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.product-img-box img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.btn-remove {
+    color: #9ca3af;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.btn-remove:hover {
+    color: #ef4444;
+}
+
+/* Input Customizations */
+.custom-select,
+.form-control {
+    background-color: var(--input-bg);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    color: var(--text-main);
+    padding: 0.6rem 0.8rem;
+}
+
+.form-control:focus,
+.custom-select:focus {
+    background-color: #ffffff;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 70, 205, 0.1);
+}
+
+.quantity-control {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--input-bg);
+    border-radius: 8px;
+    padding: 2px 8px;
+}
+
+.quantity-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    font-weight: 600;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.quantity-btn:hover {
+    color: var(--primary-blue);
+}
+
+.quantity-val {
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: 0 8px;
+    min-width: 24px;
+    text-align: center;
+}
+
+/* Sidebar Form Card */
+.contact-card {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(229, 231, 235, 0.5);
+}
+
+.input-icon-group {
+    position: relative;
+}
+
+.input-icon-group .bi-telephone {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.input-icon-group .form-control {
+    padding-left: 36px;
+}
+
+.btn-submit {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-hover);
+    color: #ffffff;
+}
+
+.form-check-input {
+    width: 1.1em;
+    height: 1.1em;
+    margin-top: 0.15em;
+    border-color: #d1d5db;
+    border-radius: 4px;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-light);
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-brand {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--primary-blue);
+}
+
+.footer-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #374151;
+    margin-bottom: 0.75rem;
+}
+
+.footer-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.footer-link:hover {
+    color: var(--primary-blue);
+}
