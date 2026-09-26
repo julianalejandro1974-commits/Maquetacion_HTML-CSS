@@ -14,7 +14,7 @@ body {
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.75),
             rgba(255, 255, 255, 0.75)),
-        url("../CSS/Captura\ de\ pantalla\ 2026-09-11\ 195339.png");
+        url("/Maquetacion_HTML-CSS/img/Captura\ de\ pantalla\ 2026-09-11\ 195339.png");
 
     background-size: cover;
     background-position: center;

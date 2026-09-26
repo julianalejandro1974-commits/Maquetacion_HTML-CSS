@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNI-PRO - Uniformes de Alta Calidad</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <style>
+    /* Estilos personalizados para ajustar colores y fondos */
+    .bg-navy { background-color: #0d1b3e; }
+    .btn-navy { background-color: #0d1b3e; color: #fff; }
+    .btn-navy:hover { background-color: #081026; color: #fff; }
+    .hero-section {
+      background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                  url('/Maquetacion_HTML-CSS/img/imagen-fondo.jpg') center/cover no-repeat;
+      padding: 100px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. NAVBAR / ENCABEZADO -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">Sammy Sports</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active fw-semibold" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary" href="#">Catalogo</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary" href="#">Cotizaciones</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary" href="#">Contacto</a></li>
+        </ul>
+        <a href="#cotizacion" class="btn btn-navy px-4 rounded-1">Iniciar seción</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. HERO SECTION -->
+  <header class="hero-section text-center">
+    <div class="container py-5">
+      <h1 class="display-5 fw-bold text-dark mb-3">Uniformes de Alta Calidad para tu Equipo</h1>
+      <p class="lead text-secondary mx-auto mb-4" style="max-width: 650px;">
+        Precisión industrial y durabilidad en cada prenda. Soluciones corporativas diseñadas para el éxito de su equipo.
+      </p>
+      <a href="#cotizacion" class="btn btn-navy btn-lg px-4 fs-6 rounded-1">Cotizar Ahora</a>
+    </div>
+  </header>
+
+  <!-- 3. NUESTRO CATÁLOGO -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Nuestro Catálogo</h2>
+      
+      <div class="row g-4">
+        <!-- Tarjeta 1 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 border rounded-0 text-center">
+            <img src="img/Unifome-futbol.jpg" class="card-img-top p-3 bg-light" alt="Línea Médica">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold text-start fs-6">Línea De Futbol</h5>
+              <p class="card-text text-muted text-start small">Uniformes de alto rendimiento, diseñados para higiene y confort prolongado.</p>
+              <a href="#" class="btn btn-outline-secondary w-100 mt-auto btn-sm rounded-1">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 border rounded-0 text-center">
+            <img src="/Maquetacion_HTML-CSS/img/uniforme-baloncesto.jpg" class="card-img-top p-3 bg-light" alt="Línea Industrial">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold text-start fs-6">Línea De Baloncesto</h5>
+              <p class="card-text text-muted text-start small">Uniformes de alto rendimiento, diseñados para higiene y durabilidad garantizada.</p>
+              <a href="#" class="btn btn-outline-secondary w-100 mt-auto btn-sm rounded-1">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 border rounded-0 text-center">
+            <img src="/Maquetacion_HTML-CSS/img/unifrome-escolar.jpg" class="card-img-top p-3 bg-light" alt="Uniformes Escolares">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold text-start fs-6">Uniformes Escolares</h5>
+              <p class="card-text text-muted text-start small">Confección clásica y materiales duraderos para el uso diario estudiantil.</p>
+              <a href="#" class="btn btn-outline-secondary w-100 mt-auto btn-sm rounded-1">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 border rounded-0 text-center">
+            <img src="/Maquetacion_HTML-CSS/img/uniforme-voleibol.jpg" class="card-img-top p-3 bg-light" alt="Ropa Corporativa">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold text-start fs-6">Línea de Voleibol</h5>
+              <p class="card-text text-muted text-start small">niformes de alto rendimiento, diseñados para higiene y durabilidad garantizada.</p>
+              <a href="#" class="btn btn-outline-secondary w-100 mt-auto btn-sm rounded-1">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paginación / Flechas de navegación -->
+      <div class="d-flex justify-content-center gap-2 mt-4">
+        <button class="btn btn-outline-secondary btn-sm px-3">&lt;</button>
+        <button class="btn btn-outline-secondary btn-sm px-3">&gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. FORMULARIO DE COTIZACIÓN -->
+  <section id="cotizacion" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="card border-0 shadow-sm p-4 p-md-5 rounded-3">
+            <h3 class="fw-bold text-center mb-4">Solicita tu Cotización</h3>
+            <form>
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold small">Nombre</label>
+                  <input type="text" class="form-control" placeholder="Su nombre">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold small">Correo Electrónico</label>
+                  <input type="email" class="form-control" placeholder="su@correo.com">
+                </div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold small">Tipo de Uniforme</label>
+                  <select class="form-select">
+                    <option selected>Línea De Futbol</option>
+                    <option value="1">Línea De Baloncestol</option>
+                    <option value="2">Uniformes Escolares</option>
+                    <option value="3">Línea de Voleibol</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold small">Cantidad Estimada</label>
+                  <input type="number" class="form-control" placeholder="Ej: 50">
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label fw-semibold small">Mensaje / Detalles Adicionales</label>
+                <textarea class="form-control" rows="3" placeholder="Describa sus requerimientos específicos..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-navy px-4 py-2 rounded-1">Enviar Solicitud</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. ASISTENCIA INMEDIATA / WHATSAPP -->
+  <section class="py-5 bg-white text-center">
+    <div class="container">
+      <h3 class="fw-bold mb-3">¿Necesita asistencia inmediata?</h3>
+      <p class="text-secondary mx-auto mb-4" style="max-width: 600px;">
+        Nuestro equipo de asesores está listo para resolver sus dudas y guiarlo en el proceso de selección de uniformes para su empresa.
+      </p>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4 mb-4 text-secondary">
+        <div><i class="bi bi-envelope me-2"></i>ventas@sammysports.com</div>
+        <div><i class="bi bi-telephone me-2"></i>+57 3133457612</div>
+      </div>
+
+      <a href="https://wa.me/15551234567" class="btn btn-success px-4 py-2 fw-semibold rounded-1" style="background-color: #25d366; border: none;">
+        <i class="bi bi-whatsapp me-2"></i>Contactar por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- 6. PIE DE PÁGINA (FOOTER) -->
+  <footer class="py-4 bg-light border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center small text-secondary">
+      <p class="mb-2 mb-md-0">© 2026 Sammy Sports. Todos los derechos Reservados.</p>
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item me-3"><a href="#" class="text-secondary text-decoration-none">Politica de privacidad</a></li>
+        <li class="list-inline-item me-3"><a href="#" class="text-secondary text-decoration-none">Terminos de Servicio</a></li>
+        <li class="list-inline-item me-3"><a href="#" class="text-secondary text-decoration-none">Pedidos al por mayor</a></li>
+        <li class="list-inline-item"><a href="#" class="text-secondary text-decoration-none">Ubicacion</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
