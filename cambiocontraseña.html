@@ -7,43 +7,39 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
     <link rel="stylesheet" href="CSS/contraseña.css">
+
     <title>Nueva Contraseña</title>
 
 </head>
 
-
 <body>
 
-    <div class="recuperar">
-
+    <div class="card recuperar shadow">
 
         <!-- LOGO -->
-
         <div class="logo">
             🛡️
         </div>
 
-
         <!-- TÍTULO -->
-
         <h1 class="titulo">
             SAMMY SPORTS
         </h1>
 
-
         <!-- SUBTÍTULO -->
-
         <h2 class="subtitulo">
             Crear Nueva Contraseña
         </h2>
 
-
         <!-- MENSAJE DE CÓDIGO VERIFICADO -->
+        <div class="alert mensaje d-flex align-items-start" role="alert">
 
-        <div class="mensaje">
-
-            <span class="mensaje-icono">
+            <span class="mensaje-icono me-2">
                 ⓘ
             </span>
 
@@ -62,36 +58,32 @@
 
         </div>
 
-
         <!-- FORMULARIO -->
-
         <form class="formulario" action="datos" method="get">
 
-
             <!-- NUEVA CONTRASEÑA -->
+            <div class="mb-3">
 
-            <div class="campo-nueva">
-
-                <label for="nueva-contraseña">
+                <label for="nueva-contraseña" class="form-label">
                     Nueva Contraseña
                 </label>
 
+                <div class="input-group">
 
-                <div class="input-contenedor">
-
-                    <span class="icono">
+                    <span class="input-group-text">
                         🔒
                     </span>
 
                     <input
                         type="password"
+                        class="form-control"
                         id="nueva-contraseña"
                         name="nueva-contraseña"
                         placeholder="••••••••••"
                         required
                     >
 
-                    <span class="icono-visibilidad">
+                    <span class="input-group-text icono-visibilidad">
                         ◉
                     </span>
 
@@ -99,70 +91,63 @@
 
             </div>
 
-
             <!-- CONFIRMAR CONTRASEÑA -->
+            <div class="mb-3">
 
-            <div class="campo-confirmar">
-
-                <label for="confirmar-contraseña">
+                <label for="confirmar-contraseña" class="form-label">
                     Confirmar Nueva Contraseña
                 </label>
 
+                <div class="input-group">
 
-                <div class="input-contenedor">
-
-                    <span class="icono">
+                    <span class="input-group-text">
                         🔒
                     </span>
 
                     <input
                         type="password"
+                        class="form-control"
                         id="confirmar-contraseña"
                         name="confirmar-contraseña"
                         placeholder="••••••••••"
                         required
                     >
 
-                    <span class="icono-confirmacion">
+                    <span class="input-group-text icono-confirmacion">
                         ✓
                     </span>
 
                 </div>
 
-
-                <p class="mensaje-confirmacion">
+                <div class="form-text mensaje-confirmacion">
                     Las contraseñas coinciden perfectamente.
-                </p>
+                </div>
 
             </div>
 
-
             <!-- BOTÓN -->
-
-            <button class="boton" type="submit">
+            <button class="btn boton w-100" type="submit">
                 Actualizar Contraseña e Ingresar &nbsp;→
             </button>
 
-
         </form>
 
-
         <!-- CANCELAR -->
-
         <a class="cancelar" href="inicioSesion.html">
             ← &nbsp; Cancelar y volver al inicio de sesión
         </a>
 
-
         <!-- SEGURIDAD -->
-
         <p class="seguridad">
             ◉ &nbsp; Entorno Seguro. Encriptación de extremo a extremo.
         </p>
 
-
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
 </html>
+

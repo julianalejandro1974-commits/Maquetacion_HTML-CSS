@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -6,27 +7,29 @@ body {
     margin: 0;
 
     min-height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     background-color: #f4f7fb;
+
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.75),
-            rgba(255, 255, 255, 0.75)),
+        linear-gradient(
+            rgba(255, 255, 255, 0.75),
+            rgba(255, 255, 255, 0.75)
+        ),
         url("/Maquetacion_HTML-CSS/img/Captura\ de\ pantalla\ 2026-09-11\ 195339.png");
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-
     font-family: Arial, sans-serif;
 }
 
-/* =========================
-   TARJETA PRINCIPAL
-   ========================= */
+
+/* TARJETA */
 
 .recuperar {
     width: 423px;
@@ -34,70 +37,64 @@ body {
 
     padding: 40px 48px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    background-color: white;
-
     border: 1px solid #e1e5eb;
     border-radius: 4px;
-
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
 
-/* =========================
-   LOGO
-   ========================= */
+/* LOGO */
 
-.recuperar > .logo {
+.logo {
     margin-top: 15px;
     margin-bottom: 8px;
 
     font-size: 32px;
 
     color: #0645c5;
+
+    text-align: center;
 }
 
 
-/* =========================
-   TÍTULO
-   ========================= */
+/* TÍTULO */
 
-.recuperar > .titulo {
-    margin: 0 0 7px;
+.titulo {
+    margin-bottom: 7px;
+
+    text-align: center;
+}
+
+.titulo h1 {
+    margin: 0;
 
     font-size: 24px;
     font-weight: bold;
-
-    text-align: center;
 
     color: #0645c5;
 }
 
 
-/* =========================
-   SUBTÍTULO
-   ========================= */
+/* SUBTÍTULO */
 
-.recuperar > .subtitulo {
-    margin: 0 0 35px;
+.subtitulo {
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+.subtitulo h2 {
+    margin: 0;
 
     font-size: 12px;
     font-weight: normal;
-
-    text-align: center;
 
     color: #555;
 }
 
 
-/* =========================
-   DESCRIPCIÓN
-   ========================= */
+/* DESCRIPCIÓN */
 
-.recuperar > .descripcion {
+.descripcion {
     width: 100%;
 
     margin: 0 0 25px;
@@ -111,36 +108,9 @@ body {
 }
 
 
-/* =========================
-   FORMULARIO
-   ========================= */
+/* LABEL */
 
-.recuperar > .formulario {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* =========================
-   CAMPO DEL CORREO
-   ========================= */
-
-.recuperar > .formulario > .campo-correo {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-/* =========================
-   LABEL DEL CORREO
-   ========================= */
-
-.recuperar > .formulario > .campo-correo > label {
+.form-label {
     margin-bottom: 7px;
 
     font-size: 11px;
@@ -150,87 +120,50 @@ body {
 }
 
 
-/* =========================
-   CONTENEDOR DEL INPUT
-   ========================= */
+/* INPUT */
 
-.recuperar > .formulario > .campo-correo > .input-contenedor {
-    width: 100%;
-    height: 35px;
-
-    display: flex;
-    align-items: center;
-
-    border: 1px solid #d8dee8;
-    border-radius: 5px;
-
-    background-color: white;
-}
-
-
-/* =========================
-   ICONO
-   ========================= */
-
-.recuperar > .formulario > .campo-correo > .input-contenedor > .icono {
+.input-group-text {
     width: 35px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+    padding: 0;
+
+    background-color: white;
+
+    border-color: #d8dee8;
+
     font-size: 13px;
 
     color: #94a3b8;
 }
 
+.form-control {
+    height: 35px;
 
-/* =========================
-   INPUT
-   ========================= */
-
-.recuperar > .formulario > .campo-correo > .input-contenedor > input {
-    width: 100%;
-    height: 100%;
-
-    padding: 0 10px 0 0;
-
-    border: none;
-    outline: none;
+    border-color: #d8dee8;
 
     font-size: 11px;
-
-    color: #334155;
 }
 
-
-/* =========================
-   PLACEHOLDER
-   ========================= */
-
-.recuperar > .formulario > .campo-correo > .input-contenedor > input::placeholder {
+.form-control::placeholder {
     color: #64748b;
 }
 
-
-/* =========================
-   INPUT SELECCIONADO
-   ========================= */
-
-.recuperar > .formulario > .campo-correo > .input-contenedor:focus-within {
+.form-control:focus {
     border-color: #0752d4;
+
+    box-shadow: none;
 }
 
 
-/* =========================
-   BOTÓN
-   ========================= */
+/* BOTÓN */
 
-.recuperar > .formulario > .boton {
-    width: 100%;
+.boton {
     height: 36px;
 
-    border: none;
     border-radius: 5px;
 
     background-color: #0752d4;
@@ -239,51 +172,36 @@ body {
 
     font-size: 11px;
     font-weight: bold;
-
-    cursor: pointer;
 }
 
-
-/* =========================
-   BOTÓN HOVER
-   ========================= */
-
-.recuperar > .formulario > .boton:hover {
+.boton:hover {
     background-color: #0647b7;
+
+    color: white;
 }
 
 
-/* =========================
-   CÓDIGO
-   ========================= */
+/* CÓDIGO */
 
-.recuperar > .formulario > .codigo {
+.codigo {
     width: 100%;
 
     margin-top: 32px;
 }
 
 
-/* =========================
-   CABECERA DEL CÓDIGO
-   ========================= */
+/* CABECERA */
 
-.recuperar > .formulario > .codigo > .codigo-header {
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+.codigo-header {
     margin-bottom: 8px;
 }
 
+.codigo-titulo {
+    display: flex;
 
-/* =========================
-   TÍTULO DEL CÓDIGO
-   ========================= */
+    justify-content: space-between;
+    align-items: center;
 
-.recuperar > .formulario > .codigo > .codigo-header > .codigo-titulo {
     font-size: 10px;
     font-weight: bold;
 
@@ -291,11 +209,9 @@ body {
 }
 
 
-/* =========================
-   REENVIAR CÓDIGO
-   ========================= */
+/* REENVIAR */
 
-.recuperar > .formulario > .codigo > .codigo-header > .codigo-reenviar {
+.codigo-reenviar {
     font-size: 9px;
 
     color: #94a3b8;
@@ -304,23 +220,14 @@ body {
 }
 
 
-/* =========================
-   CONTENEDOR DE LOS 6 INPUTS
-   ========================= */
+/* INPUTS DEL CÓDIGO */
 
-.recuperar > .formulario > .codigo > .codigo-inputs {
+.codigo-inputs {
     width: 100%;
-
-    display: flex;
-    justify-content: space-between;
+    gap: 8px;
 }
 
-
-/* =========================
-   CADA INPUT DEL CÓDIGO
-   ========================= */
-
-.recuperar > .formulario > .codigo > .codigo-inputs > .codigo-input {
+.codigo-input {
     width: 35px;
     height: 40px;
 
@@ -328,10 +235,6 @@ body {
 
     border: 1px solid #d8dee8;
     border-radius: 4px;
-
-    outline: none;
-
-    background-color: white;
 
     text-align: center;
 
@@ -341,21 +244,16 @@ body {
     color: #334155;
 }
 
-
-/* =========================
-   INPUT DEL CÓDIGO SELECCIONADO
-   ========================= */
-
-.recuperar > .formulario > .codigo > .codigo-inputs > .codigo-input:focus {
+.codigo-input:focus {
     border-color: #0752d4;
+
+    box-shadow: none;
 }
 
 
-/* =========================
-   AYUDA DEL CÓDIGO
-   ========================= */
+/* AYUDA */
 
-.recuperar > .formulario > .codigo > .codigo-ayuda {
+.codigo-ayuda {
     margin: 9px 0 0;
 
     font-size: 9px;
@@ -366,11 +264,9 @@ body {
 }
 
 
-/* =========================
-   VOLVER AL LOGIN
-   ========================= */
+/* VOLVER */
 
-.recuperar > .volver {
+.volver {
     margin-top: 27px;
 
     font-size: 11px;
@@ -380,13 +276,14 @@ body {
     text-decoration: none;
 }
 
+.volver:hover {
+    text-decoration: underline;
+}
 
-/* =========================
-   SEGURIDAD
-   ========================= */
 
+/* SEGURIDAD */
 
-.recuperar > .seguridad {
+.seguridad {
     width: 100%;
 
     margin: 35px 0 0;
