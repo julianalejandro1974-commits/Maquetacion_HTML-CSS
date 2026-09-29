@@ -16,7 +16,7 @@
 
     <nav class="navbar navbar-expand-md bg-white border-bottom py-3">
         <div class="container">
-            <a class="navbar-brand" href="#">SAMMY SPORTS</a>
+            <a class="navbar-brand" href="paginaInicio.html">SAMMY SPORTS</a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navContent">
@@ -29,16 +29,16 @@
                         <a class="nav-link" href="catalogo.html">Catálogo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link active fw-semibold" href="cotizacion.html">Cotizaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
                 <div class="d-flex justify-content-center align-items-center gap-3">
                     <form action="cotizacion.html" method="GET">
                         <button type="submit"
-                            class="btn btn-cotizar btn-sm flex-fill d-flex align-items-center justify-content-center gap-1">
+                            class="btn btn-cotizar btn-sm flex-fill d-flex align-items-center justify-content-center gap-1" href="cotizacion.html">
                             🛒
                         </button>
                     </form>
@@ -167,6 +167,24 @@
             </div>
         </div>
     </main>
+
+    <section class="py-5 bg-white text-center" id="contacto">
+    <div class="container">
+      <h3 class="fw-bold mb-3">¿Necesita asistencia inmediata?</h3>
+      <p class="text-secondary mx-auto mb-4" style="max-width: 600px;">
+        Nuestro equipo de asesores está listo para resolver sus dudas y guiarlo en el proceso de selección de uniformes para su empresa.
+      </p>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4 mb-4 text-secondary">
+        <div><i class="bi bi-envelope me-2"></i>ventas@sammysports.com</div>
+        <div><i class="bi bi-telephone me-2"></i>+57 3133457612</div>
+      </div>
+
+      <a href="https://wa.me/15551234567" class="btn btn-success px-4 py-2 fw-semibold rounded-1" style="background-color: #25d366; border: none;">
+        <i class="bi bi-whatsapp me-2"></i>Contactar por WhatsApp
+      </a>
+    </div>
+  </section>
 
     <footer class="py-4 bg-light border-top">
         <div

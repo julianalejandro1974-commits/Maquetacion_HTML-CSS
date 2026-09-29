@@ -30,7 +30,7 @@ body {
 }
 
 .nav-link {
-    color: var(--text-muted) !important;
+    color: black !important;
     font-size: 0.9rem;
     font-weight: 500;
 }
